@@ -1,6 +1,7 @@
 #$1: email addr
 #$2: user name
 #$3: 
+#$4:
 
 #install git componet
 sudo apt-get install git git-core git-gui git-doc git-svn git-cvs$
