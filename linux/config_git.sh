@@ -1,7 +1,5 @@
 #$1: email addr
 #$2: user name
-#$3: 
-#$4:
 
 #install git componet
 sudo apt-get install git git-core git-gui git-doc git-svn git-cvs$
@@ -27,7 +25,16 @@ git init
 touch readme
 git add Readme #--all
 git commit -m "add readme file"
-git remote add origin https://github.com/你的github用户名/你的github仓库.git 
+git remote add origin https://github.com/sth.git
 
 git push origin master
-git clone https://github.com/你的github用户名/你的github仓库.git 
+git clone https://github.com/sth.git
+
+#save username and password in credentials
+$ git config credential.helper store
+$ git push http://example.com/repo.git
+Username: <type your username>
+Password: <type your password>
+
+#clone rapository with SSH instead of HTTPS
+can escap from input username + password each time commit and push
