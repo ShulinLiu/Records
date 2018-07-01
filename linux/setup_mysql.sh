@@ -28,6 +28,16 @@ CREATE TABLE persons (
     City varchar(255) 
 );
 
+CREATE TABLE paopao_passwd(
+    id  int,
+    name varchar(255),
+    passwd varchar(255),
+    note  varchar(255)
+);
+
+INSERT INTO paopao_passwd (id, name, passwd, note) VALUES(
+ 1, 'demo','paopao','')
+ 
 INSERT INTO persons VALUES(
    1, 'Zhu', 'Kevin', 'Woodland', 'SG'); #db/table/column key is case sensitive
 INSERT INTO persons(person_id, last_name, first_name, address, city) 
